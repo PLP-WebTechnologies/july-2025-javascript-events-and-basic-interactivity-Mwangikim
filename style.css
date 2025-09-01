@@ -1,0 +1,68 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.dark-mode {
+  background: #121212;
+  color: white;
+}
+
+.faq-answer {
+  display: none;
+  margin: 5px 0;
+}
+
+.error {
+  color: red;
+  font-size: 0.8em;
+}
+
+#formMessage {
+  font-weight: bold;
+  margin-top: 10px;
+}
+/* Tabs styling */
+.tabs {
+  margin-top: 10px;
+}
+
+.tab-btn {
+  padding: 8px 14px;
+  margin-right: 5px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+}
+
+.tab-btn.active {
+  background: #007BFF;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 0 5px 5px 5px;
+  margin-top: -1px;
+}
+
+.tab-content.active {
+  display: block;
+}

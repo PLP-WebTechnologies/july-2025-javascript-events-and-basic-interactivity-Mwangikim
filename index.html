@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🚀 Interactive Web Page Assignment</h1>
+    <button id="themeToggle">🌙 Toggle Dark/Light Mode</button>
+  </header>
+
+  <main>
+    <!-- Part 1: Event Handling Example -->
+    <section>
+      <h2>🎮 Counter Game</h2>
+      <p>Click the button to increase the counter:</p>
+      <button id="counterBtn">Click Me!</button>
+      <p>Count: <span id="countValue">0</span></p>
+    </section>
+
+        <!-- Part 2 (extra): Tabbed Interface -->
+    <section>
+      <h2>📑 Tabbed Interface</h2>
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="tab1">Home</button>
+        <button class="tab-btn" data-tab="tab2">Profile</button>
+        <button class="tab-btn" data-tab="tab3">Settings</button>
+      </div>
+      <div class="tab-content active" id="tab1">
+        <p>Welcome to the Home tab! 🎉</p>
+      </div>
+      <div class="tab-content" id="tab2">
+        <p>This is the Profile tab. 👤</p>
+      </div>
+      <div class="tab-content" id="tab3">
+        <p>Here you can change Settings. ⚙️</p>
+      </div>
+    </section>
+
+    <!-- Part 3: Interactive Elements -->
+    <section>
+      <h2>❓ FAQ Section</h2>
+      <div class="faq-item">
+        <button class="faq-question">What is JavaScript?</button>
+        <p class="faq-answer">JavaScript is a programming language that makes web pages interactive.</p>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What is DOM?</button>
+        <p class="faq-answer">The DOM (Document Object Model) is a tree structure of your web page that JavaScript can manipulate.</p>
+      </div>
+    </section>
+
+    <!-- Part 3: Form Validation -->
+    <section>
+      <h2>📋 Form Validation</h2>
+      <form id="signupForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <small class="error" id="nameError"></small>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" required>
+        <small class="error" id="emailError"></small>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <small class="error" id="passwordError"></small>
+
+        <button type="submit">Sign Up</button>
+      </form>
+      <p id="formMessage"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
